@@ -22,14 +22,21 @@
 #define TR(attributes) CHTML_SCOPE(fprintf(HTML_STREAM, "<tr %s>", attributes), fprintf(HTML_STREAM, "</tr>"))
 #define TD(attributes) CHTML_SCOPE(fprintf(HTML_STREAM, "<td %s>", attributes), fprintf(HTML_STREAM, "</td>"))
 
+#define LABEL(attributes) CHTML_SCOPE(fprintf(HTML_STREAM, "<label %s>", attributes), fprintf(HTML_STREAM, "</label>"))
+
 #define FORM(attributes) CHTML_SCOPE(fprintf(HTML_STREAM, "<form %s>", attributes), fprintf(HTML_STREAM, "</form>"))
 #define INPUT(format, ...) fprintf(HTML_STREAM, "<input " format ">", ##__VA_ARGS__)
+#define SELECT(attributes) CHTML_SCOPE(fprintf(HTML_STREAM, "<select %s>", attributes), fprintf(HTML_STREAM, "</select>"))
+#define OPTION(attributes) CHTML_SCOPE(fprintf(HTML_STREAM, "<option %s>", attributes), fprintf(HTML_STREAM, "</option>"))
+#define TEXTAREA(attributes) CHTML_SCOPE(fprintf(HTML_STREAM, "<textarea %s>", attributes), fprintf(HTML_STREAM, "</textarea>"))
 
 #define BR() fprintf(HTML_STREAM, "<BR>")
 #define HR(format, ...) fprintf(HTML_STREAM, "<hr " format ">", ##__VA_ARGS__)
 
 #define P(format, ...) fprintf(HTML_STREAM, "<p>" format "</p>", ##__VA_ARGS__)
 #define B(format, ...) fprintf(HTML_STREAM, "<b>" format "</b>", ##__VA_ARGS__)
+#define EM(format, ...) fprintf(HTML_STREAM, "<em>" format "</em>", ##__VA_ARGS__)
+#define I(format, ...) fprintf(HTML_STREAM, "<i>" format "</i>", ##__VA_ARGS__)
 #define STRONG(format, ...) fprintf(HTML_STREAM, "<strong>" format "</strong>", ##__VA_ARGS__)
 
 #define A(format, ...) CHTML_SCOPE(fprintf(HTML_STREAM, "<a " format ">", ##__VA_ARGS__), fprintf(HTML_STREAM, "</a>"))
