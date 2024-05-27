@@ -1,8 +1,10 @@
 # CHTML
 
-little library for generating HTML code from C. Original idea from [there](https://www.reddit.com/r/C_Programming/comments/11at6d8/generate_html_in_c/)
+Little single header library for generating HTML code. 
+> Original idea from this Reddit post [there](https://www.reddit.com/r/C_Programming/comments/11at6d8/generate_html_in_c/)
 
-### Example
+## Example
+This is a little usage example, that generates very simple html code
 
 ```c
 #include "chtml.h"
@@ -31,3 +33,7 @@ int main() {
     return 0;
 }
 ```
+
+## License
+**CHTML** is free and open source library/software. All code in this repository is licensed under
+- MIT License ([LICENSE.md](https://github.com/Maksasj/chtml/blob/master/LICENSE.md) or https://opensource.org/license/mit/)
